@@ -37,9 +37,6 @@ $container['logger'] = function($c) {
 // auth routes
 $app->group('/', function () {
 $this->get('', \Demo\Controller\ExampleController::class . ':getDefault')->setName('get-default');
-    $this->post('', \Demo\Controller\ExampleController::class . ':update')->setName('update');
-//    $this->put('', \Demo\Controller\ExampleController::class . ':add')->setName('add');
-//    $this->delete('', \Demo\Controller\ExampleController::class . ':delete')->setName('delete');
 });
 
 $app->run();
